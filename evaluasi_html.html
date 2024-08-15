@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>evaluasihtml_Fasya</title>
+    <style>
+        /* CSS buat bikin gambar jadi kecil, buled, dan di pojok kiri atas */
+        .profile-pic {
+            width: 50px; /* Ubah ukuran gambar */
+            height: 50px;
+            border-radius: 50%; /* Bikin gambar jadi lingkaran */
+            object-fit: cover; /* Biar proporsinya tetep bagus */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 70px; /* Biar konten nggak ketimpa gambar */
+            margin-left: 70px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1e90ff;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #666;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="Joy.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Selamat datang di situs web <em>Fasya</em></h1>
+    <h2>Pengelolaan Teks</h2>
+    <p>Ini adalah paragraf <strong>pertama</strong>.</p>
+    <a href="https://chatgpt.com">Ini ChatGPT coyy</a>
+    <ol>
+        <li>aku pengen jadi youtuber</li>
+        <li>pengen punya uang banyak</li>
+        <li>pengen ikonik sama Joy</li>
+    </ol>
+    <ul>
+        <li>maen game</li>
+        <li>ngedit konten</li>
+        <li>scrol tiktok</li>
+    </ul>
+    <h2>Tabel Data</h2>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Kota</th>
+        </tr>
+        <tr>
+            <td>Fasya</td>
+            <td>19</td>
+            <td>Bandung</td>
+        </tr>
+        <tr>
+            <td>Joy</td>
+            <td>16</td>
+            <td>Isekai</td>
+        </tr>
+        <tr>
+            <td>Nayla</td>
+            <td>18</td>
+            <td>Jakarta</td>
+        </tr>
+    </table>
+    <blockquote>Ini adalah kutipan.</blockquote>
+    <form action="/submit" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+    
+        <label for="gender">Jenis Kelamin:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Laki-laki</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Perempuan</label><br><br>
+    
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan"></textarea><br><br>
+    
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
