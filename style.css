@@ -1,0 +1,74 @@
+/* Mengatur background dan font dasar */
+body {
+    background-color: #ffe6f2; /* Latar belakang pink muda */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gaya untuk heading */
+h1 {
+    color: #ff66b2; /* Pink yang lebih gelap */
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk input dan tombol */
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff66b2; /* Border pink */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: #ff66b2; /* Warna dasar tombol pink */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #ff3385; /* Warna tombol saat di-hover */
+}
+
+/* Gaya untuk div output */
+#output {
+    background-color: #fff0f5; /* Background pink sangat muda */
+    padding: 20px;
+    border: 2px solid #ff66b2; /* Border pink */
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    min-height: 100px;
+    font-size: 16px;
+}
+
+/* Gaya untuk daftar */
+ul {
+    list-style-type: square; /* Bentuk bullet point */
+    padding-left: 20px;
+}
+
+/* Gaya untuk teks yang ditulis dengan document.write */
+body > script:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff66b2;
+    font-weight: bold;
+    font-size: 20px;
+}
