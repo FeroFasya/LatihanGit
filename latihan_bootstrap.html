@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap</title>
+    <!-- Sertakan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #a2c2e0, #f7b7a3); /* Gradien Latar Belakang */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #ff6f61, #d126d7); /* Gradien Header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            background: linear-gradient(135deg, #4a54f1, #2b2d79); /* Gradien Navbar */
+            padding: 10px 0;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #fff; /* Warna Tautan Navbar */
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #FFC107; /* Warna Hover Navbar */
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #f78ca0, #f9748f); /* Gradien Card */
+            color: #fff;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            border-bottom: 5px solid #fff; /* Warna Border Gambar Kartu */
+        }
+        .footer {
+            background: linear-gradient(135deg, #6a1b29, #a04d71); /* Gradien Footer */
+            color: white;
+            padding: 40px 0;
+            backdrop-filter: blur(10px);
+        }
+        .footer a {
+            color: #FFC107; /* Warna Tautan Footer */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-col {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #fff;">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Struktur Layout -->
+    <header>
+        <h1>Hero Joy MLBB</h1>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="joy1.jpg" class="card-img-top" alt="Joy 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Flash of Miracle</h5>
+                        <p class="card-text">Ini adalah skin basic dari Hero Joy, Mempunyai Fitur basic yaitu effect battle skill berwarna kuning, opsi ini akan mendapatkan voice over. </p>
+                        <a href="#" class="btn btn-light">Free</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="joy2.jpg" class="card-img-top" alt="Joy 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Feline Ranger</h5>
+                        <p class="card-text">Ini adalah skin kedua dari Hero Joy, memilih opsi ini akan mendapatkan perubahan tampilan serta atribut +8, tampilan hero berwarna orange yang imut.</p>
+                        <a href="#" class="btn btn-light">$19.90.</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="joy3.jpg" class="card-img-top" alt="Joy 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Protector</h5>
+                        <p class="card-text">Ini adalah skin ketiga dari Hero Joy, memilih opsi ini akan mendapatkan effect battle khusus berwarna biru, voice over khusus, serta tampilan baru yang menarik.</p>
+                        <a href="#" class="btn btn-light">$39.90.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bootstrap -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-md-3 footer-col">
+                    <h5>Tentang Kami</h5>
+                    <p>Berdiri sejak Joy dirilis di MLBB, tepatnya pada tanggal 18 November 2022.</p>
+                    <p> © 2022–2024 Kinderfer Program.</p>
+                </div>
+                <!-- Links -->
+                <div class="col-md-3 footer-col">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-3 footer-col">
+                    <h5>Contact Info</h5>
+                    <p>Email: ferofasya@gmail.com</p>
+                    <p>Phone: 0881-5750-989 </p>
+                </div>
+                <!-- Social Media -->
+                <div class="col-md-3 footer-col">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sertakan Bootstrap JS dan dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
